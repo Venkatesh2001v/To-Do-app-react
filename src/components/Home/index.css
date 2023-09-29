@@ -1,0 +1,129 @@
+.main-container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.todo-heading {
+  font-family: 'Roboto';
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.title-sub-part {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 400;
+}
+
+form {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type='text'] {
+  background: none;
+  color: #17181f;
+  width: 100%;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+form button {
+  color: white;
+  background-color: #4c63b6;
+  font-family: 'Roboto';
+  font-size: 18px;
+  border-width: 0px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+div.task {
+  background-color: #f5f5fd;
+  border-radius: 10px;
+  padding: 5px 9px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s linear;
+}
+div.task svg {
+  height: 20px;
+  margin-right: 6px;
+  fill: #4c63b6;
+}
+
+div.task.done {
+  opacity: 0.9;
+}
+
+div.task-name,
+div.task form {
+  flex-grow: 1;
+}
+
+div.task span {
+  position: relative;
+}
+
+div.task span:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  transition: width 0.1s linear;
+}
+
+div.task.done span:before {
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+div.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+button.trash {
+  background: none;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+button.trash svg {
+  fill: rgb(226, 10, 10);
+  height: 18px;
+}
+div.task input {
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
